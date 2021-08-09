@@ -107,7 +107,8 @@ height: 100vh;
 }
 .banner{
     position: relative;
-    bottom: -40%;
+    /* bottom: -50%; */
+    transform: translateY(80%);
     
 }
 .banner-text h2{
