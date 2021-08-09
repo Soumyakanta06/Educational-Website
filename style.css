@@ -1064,7 +1064,7 @@ left: -10%;
     /*FOOTER ENDS HERE*/
     
     
-    
+    /* navbar */
     
     .logo {
         max-width: 200px;
@@ -1084,6 +1084,10 @@ left: -10%;
       
       .push-left {
         margin-left: auto;
+      }
+      .spec a img{
+          width: 200px;
+          height: 120px;
       }
       
       /* Menu */
@@ -1211,3 +1215,166 @@ left: -10%;
       .sub-nav:hover {
         display: block;
       }
+
+
+
+      .openMenu i{
+        color: white;
+    }
+    @media all and (max-width: 450px){
+        .openMenu i{
+            font-size: 27px;
+        }
+    }
+    .closeMenu i{
+        color: white;
+    }
+    .spec {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .logo {
+        letter-spacing: 0.3rem;
+        text-decoration: none;
+        font-size: 21px;
+        color: white;
+    }
+    
+    
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-top: 0;
+        width: 100%;
+        padding: 20px 7%;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav .mainMenu {
+        display: flex;
+        list-style: none;
+    }
+    nav .mainMenu li a {
+        position: relative;
+        display: inline-block;
+        margin: 0 3%;
+        text-decoration: none;
+        font-size: 21px;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: all .35s;
+        z-index: 2;
+    }
+    nav .mainMenu li a:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: linear-gradient(90.12deg, #FE1EA9 12.14%, #5E49EE 94.87%);
+        transition: all 0.35s;
+        z-index: -1;
+    }
+    nav .mainMenu li a:hover {
+        color: #fff;
+    }
+    
+    nav .mainMenu li a:hover:after{
+        width: 100%;
+        border-radius: 10px;
+    }
+    nav .openMenu {
+        font-size: 2rem;
+        margin: 10px;
+        display: none;
+        cursor: pointer;
+    }
+    nav .mainMenu .closeMenu , .icons i {
+        font-size: 2rem;
+        display: none;
+        cursor: pointer;
+    }
+    .fa-facebook:hover {color: #FE1EA9 ;}
+    .fa-twitter:hover {color: #FE1EA9 ;}
+    .fa-instagram:hover {color: #FE1EA9 ;}
+    .fa-github:hover {color: #FE1EA9 ;}
+    
+    
+    @media(max-width: 900px){
+        nav .mainMenu {
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 10;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgb(44, 46, 44);
+            transition: top 1s ease;
+            display: none;
+        }
+        nav .mainMenu .closeMenu {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+    
+        }
+        nav .openMenu {
+            display: block;
+        }
+        nav .mainMenu li a:hover {
+            background: none;
+            background: -webkit-linear-gradient(180deg, #FE1EA9 12.14%, #5E49EE 94.87%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+            
+        }
+        .icons i {
+            display: inline-block;
+            padding: 12px;
+        }
+        img {
+            width: 35px;
+            margin-right: 5px;
+        }
+        .logo {
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            letter-spacing: 0.15rem;
+        }
+        nav ul li a {
+            position: relative;
+            display: inline-block;
+            margin: 0 3%;
+            text-decoration: none;
+            font-size: 17px;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+        nav .mainMenu li a {
+            position: relative;
+            display: inline-block;
+            margin: 10px 3%;
+            text-decoration: none;
+            font-size: 30px;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        nav {
+            padding: 11px 5px;
+        }
+    }
+    
