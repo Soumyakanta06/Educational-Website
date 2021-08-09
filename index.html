@@ -27,15 +27,94 @@
 <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+
+<!-- Wow Js Animation -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
     </head>
     <body style="background: #F5DFCB;">
    
                                             <!-- Banner -->
+                                            <!-- <nav>
+                                                <input type="checkbox" id="res-menu">
+                                                <label for="res-menu">
+                                                    <i class="fa fa-bars" id="sign-one"></i> 
+                                                    <i class="fa fa-times" id="sign-two"></i> 
+                                                   
 
-        <div class="container-fluid">
+                                                </label>
+                                                <h1>Skittz</h1>
+                                                <ul>
+                                                    <li><a href="#">Home</a></li>
+                                                    <li><a href="#">About</a></li>
+                                                    <li><a href="#">Portfolio</a></li>
+                                                    <li><a href="#">Services</a></li>
+
+                                                </ul>
+                                            </nav> -->
+                                            <nav class="navbar">
+                                                <div class="logo"><img src="./SkittLogo3.png" alt="LOGO" height="50px"></div>
+                                                <div class="push-left">
+                                                  <button id="menu-toggler" data-class="menu-active" class="hamburger">
+                                                    <span class="hamburger-line hamburger-line-top"></span>
+                                                    <span class="hamburger-line hamburger-line-middle"></span>
+                                                    <span class="hamburger-line hamburger-line-bottom"></span>
+                                                  </button>
+                                              
+                                                  <!--  Menu compatible with wp_nav_menu  -->
+                                                  <ul id="primary-menu" class="menu nav-menu">
+                                                    <li class="menu-item current-menu-item"><a class="nav__link"  href="#n1">Home</a></li>
+                                                    <li class="menu-item dropdown"><a class="nav__link"  href="#n2">About</a>
+                                                       <!-- <ul class="sub-nav" >
+                                                        <li><a class="sub-nav__link" href="#">link 1</a></li>
+                                                        <li><a class="sub-nav__link" href="#">link 2</a></li>
+                                                        <li><a class="sub-nav__link" href="#">link 3 - long link - long link - long link</a></li>
+                                                      </ul> -->
+                                              
+                                                    </li>
+                                                    <li class="menu-item dropdown"><a class="nav__link"  href="#n3">Course</a>
+                                                      <!-- <ul class = "sub-nav">
+                                                        <li><a class="sub-nav__link"  href="#">link 1</a></li>
+                                                        <li><a class="sub-nav__link"  href="#">link 2</a></li>
+                                                        <li><a class="sub-nav__link"  href="#">link 3 - long link - long link - long link</a></li>
+                                                      </ul> -->
+                                                    </li>
+                                                    <li class="menu-item "><a class="nav__link"  href="#n4">Instructor</a>
+                                                    <li class="menu-item "><a class="nav__link"  href="#n5">Testimonials</a>
+
+                                                     
+                                                    </li>
+                                                  </ul>
+                                              
+                                              
+                                                </div>
+                                              </nav>
+
+        <div class="container-fluid ff">
+            <!-- <nav>
+                <input type="checkbox" id="res-menu">
+                <label for="res-menu">
+                    <i class="fa fa-bars" id="sign-one"></i> 
+                    <i class="fa fa-times" id="sign-two"></i> 
+                   
+
+                </label>
+                <h1>Skittz</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+
+                </ul>
+            </nav> -->
+            
             <div class="row ">
-                <div class="col-xl-12 col-md-12 ff">
-                    <div class="row banner">
+                <div class="col-xl-12 col-md-12 ">
+                    <div class="row banner" id="n1">
                     <div class="col-lg-1 col-md-1 col-sm-1 col-1 icons">
                         <i class="fab fa fa-instagram"></i><br>
                         <i class="fab fa fa-linkedin"></i><br>
@@ -54,9 +133,9 @@
                                                   <!-- About Us -->
 
         <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 about">
-                    <h2 class="heading">About Us</h2>
+            <div class="row" id="n2">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 about wow fadeInLeft">
+                    <h2 class="heading1">About Us</h2>
                 
                 <p>As a global nonprofit, we're relentlessly pursuing our vision of a world where every learner can access education to unlock their potential, without the barriers of cost or Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, dolorum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, maiores.</p>
                 <div class="row ee">
@@ -88,7 +167,7 @@
 
         <!-- Our Courses -->
         <div class="container-fluid">
-            <h2 class="heading course">Our Courses</h2>
+            <h2 class="heading1 course" id="n3">Our Courses</h2>
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 sk">
                     <div class="row box">
@@ -246,7 +325,7 @@
 
           <!-- Our Mentors -->
 <div class="container">
-    <div class="row instructor">
+    <div class="row instructor" id="n4">
         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 instructor1">
             <img src="https://images.unsplash.com/flagged/photo-1559475555-b26777ed3ab4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fHRlYWNoZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
         </div>
@@ -263,7 +342,7 @@
 
   <!-- Testimonials -->
 
-  <section class="testimonial text-center">
+  <section class="testimonial text-center" id="n5">
     <div class="container">
 
         <div class="heading white-heading">
@@ -303,8 +382,78 @@
     </div>
 </section>
 
+<!-- Footer -->
 
-        <script src="" async defer></script>
+<footer id="site-foo">
+    <div class="foot-container">
+        <div class="foot-row">
+            <div class="col1">
+                <div class="contents">
+                    <div class="foot-logo">
+                        <img src="./SkittLogo3.png" class="foot-img" alt="logo">
+                    </div>
+                    <div class="heading">
+                        <!-- <h2> Education </h2> -->
+                    </div>
+                    <div class="contents-para">
+                     <p>Skitt collaborates with university students who are enthusiastic about growing developer communities and supports them with commencing student clubs on their campuses. </p>
+
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="col2">
+                <h2>Important Links</h2>
+                <a href="#" class="foot-col2-t" >Terms Of Service</a>
+                <br>
+                <a href="#" class="foot-col2-t" >Privacy Policy</a>
+                <br>
+                <a href="#" class="foot-col2-t" >Technical Clubs</a>
+                <br>
+                <a href="#" class="foot-col2-t" >Educational Program</a>
+                <br>
+                <a href="www.google.com"  class="foot-col2-t">Machine Learning</a>
+            </div>
+            <div class="col3">
+                <h2>Contact Us</h2>
+                 <div class="col3-para">
+                     <p><i class="fas fa fa-map-marker"></i>&nbsp;      Skitt Education Department,
+                     Bhubaneswar
+                         <br>
+                         <i class="far fa fa-envelope"></i>&nbsp; team@skitt.org
+                     </p>
+                     <div class="col3-socialmedia">
+                         <ul>
+                             <li><a href="#" class="foot-col3-socialmedia" ><i class="fab fa fa-facebook"></i></a></li>
+                             <li><a href="#" class="foot-col3-socialmedia" ><i class="fab fa fa-instagram"></i></a></li>
+                             <li><a href="#" class="foot-col3-socialmedia" ><i class="fab fa fa-linkedin"></i></a></li>
+                             <li><a href="#" class="foot-col3-socialmedia" ><i class="fab fa fa-twitter"></i></a></li>
+                         </ul>
+                     </div>
+                 </div>
+             
+            </div>
+        </div>
+    </div>
+    <div class="footer-text">
+        <div class="text-col">
+            <!-- <hr> -->
+            <div style="height: 58px;">
+                <p style=" margin-bottom: 36px; font-family: 'Open Sans', sans-serif; font-size: medium;     font-weight: bolder; position: relative;
+                top: 44px; padding-left: 22px; padding-right: 28px;">
+                 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All Rights Reserved | This template is made with <i class="fas fa fa-heart" style="color: red;"></i> by Soumyakanta Mohanty
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        <script src="./script.js" async defer></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
          <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
